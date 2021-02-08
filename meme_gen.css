@@ -1,0 +1,7 @@
+.meme-page-header {
+    display:flexbox;
+    text-align: center;
+    font-family: 'Londrina Sketch', cursive;
+    font-size: 44px;
+    color: slategray;
+}
