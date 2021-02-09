@@ -25,6 +25,7 @@ function makeMeme(imageURL, toptext, bottomtext){
     const topDiv = document.createElement("div");
     const bottomDiv = document.createElement("div");
     meme.classList.add("newmeme-layout");
+    meme.setAttribute("data-removeMeme", "REMOVE MEME");
     memeImg.classList.add("memeImg-sizing");
     topDiv.classList.add("meme-toptext-position");
     bottomDiv.classList.add("meme-bottomtext-position");
@@ -36,3 +37,4 @@ function makeMeme(imageURL, toptext, bottomtext){
     meme.append(bottomDiv);
     return meme;
 }
+

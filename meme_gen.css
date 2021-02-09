@@ -74,7 +74,7 @@ form button {
 
 .meme-toptext-position {
     position: absolute;
-    top: 10px;
+    top: 5px;
     align-self: center;
     text-align: center;
     font-family: Impact;
@@ -93,4 +93,19 @@ form button {
     color: white;
     font-size: 50px;
     text-transform: uppercase;
+}
+
+.newmeme-layout:hover:after {
+    content: attr(data-removeMeme);
+    width: 100%;
+    height: 100%;
+    background: rgba(29, 29, 29, 0.6);
+    position: absolute;
+    color: red;
+    font-size: 60px;
+    text-align:center;
+    font-family: "Londrina Sketch", cursive;
+    top: 0;
+    left: 0;
+    transition: 0.7s;
 }
