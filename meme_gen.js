@@ -24,17 +24,21 @@ function makeMeme(imageURL, toptext, bottomtext){
     const memeImg = document.createElement("img");
     const topDiv = document.createElement("div");
     const bottomDiv = document.createElement("div");
+    const removeBtn = document.createElement('button');
     meme.classList.add("newmeme-layout");
-    meme.setAttribute("data-removeMeme", "REMOVE MEME");
     memeImg.classList.add("memeImg-sizing");
     topDiv.classList.add("meme-toptext-position");
     bottomDiv.classList.add("meme-bottomtext-position");
+    removeBtn.classList.add("removeMeme-btn")
     memeImg.setAttribute("src", imageURL);
     topDiv.innerText = toptext;
     bottomDiv.innerText = bottomtext;
+    removeBtn.innerText = "REMOVE MEME X";
+    meme.append(removeBtn);
     meme.append(memeImg);
     meme.append(topDiv);
     meme.append(bottomDiv);
+
     return meme;
 }
 
