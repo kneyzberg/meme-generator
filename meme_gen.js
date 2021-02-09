@@ -21,9 +21,13 @@ memeForm.addEventListener('submit', function(e){
 
 function makeMeme(imageURL, toptext, bottomtext){
     const meme = document.createElement('div');
+    meme.classList.add("newmeme-layout");
     const memeImg = document.createElement("img");
+    memeImg.classList.add("meme-sizing");
     const topDiv = document.createElement("div");
+    topDiv.classList.add("meme-toptext-position");
     const bottomDiv = document.createElement("div");
+    bottomDiv.classList.add("meme-bottomtext-position");
     memeImg.setAttribute("src", imageURL);
     topDiv.innerText = toptext;
     bottomDiv.innerText = bottomtext;
