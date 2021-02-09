@@ -67,13 +67,13 @@ form button {
 
 .meme-toptext-position {
     position: absolute;
-    top: 5px;
+    top: 10px;
     align-self: center;
     text-align: center;
     font-family: Impact;
     text-shadow: -2px 0 black, 0 2px black, 2px 0 black, 0 -2px black;
     color: white;
-    font-size: 40px;
+    font-size: 50px;
     text-transform: uppercase;
 }
 .meme-bottomtext-position {
@@ -84,6 +84,6 @@ form button {
     font-family: Impact;
     text-shadow: -2px 0 black, 0 2px black, 2px 0 black, 0 -2px black;
     color: white;
-    font-size: 40px;
+    font-size: 50px;
     text-transform: uppercase;
 }
