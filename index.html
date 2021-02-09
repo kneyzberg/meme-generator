@@ -8,16 +8,31 @@
     <link rel="stylesheet" href="meme_gen.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
 <link href="https://fonts.googleapis.com/css2?family=Londrina+Sketch&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Londrina+Outline&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Lilita+One&display=swap" rel="stylesheet">
 </head>
 <body>
-    <header class="meme-page-header">
+    <header class="meme-page-header" class="meme-top-page-layout">
         <h1>LET'S MAKE SOME MEMES!</h1>
+        <div>Your Handy Dandy Meme Generator!</div>
     </header>
     <section>
-        <form action="" id="memeform">
-            <div> Image URL: <input type="url" name="imageSrc" id=""></div>
-            <div>Top Text: <input type="text" placeholder="" name="topText"> </div>
-            <div>Bottom Text: <input type="text" placeholder="" name="bottomText"></div>
+        <form action="" id="memeform" class="form-text"class="meme-top-page-layout">Fill out the form below to generate your meme:
+            <div > 
+                <label for="">Image URL:
+                    <input type="url" name="imageSrc" id="" placeholder="paste in your Image URL">
+                </label>
+            </div>
+            <div >
+                <label for=""> Top Text: 
+                    <input type="text" placeholder="Type in text for the top of the meme" name="topText"> 
+                </label>
+            </div>
+            <div >
+                <label>Bottom Text:
+                    <input type="text" placeholder="Type in text for the bottom of the meme" name="bottomText">
+                </label>
+            </div>
             <button>Generate Meme!</button>
         </form>
     </section>

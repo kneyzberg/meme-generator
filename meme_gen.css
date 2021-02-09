@@ -1,7 +1,31 @@
+.meme-top-page-layout {
+    display: flex;
+    flex-direction: column;
+}
+h1 {
+    margin-bottom: 0px;
+}
+
 .meme-page-header {
-    display:flexbox;
+    justify-content: center;
     text-align: center;
     font-family: 'Londrina Sketch', cursive;
-    font-size: 44px;
     color: slategray;
+    font-size: 44px;
+    font-weight: bold;
+    padding-bottom: 50px;
+}
+
+form div {
+    padding-left: 50px;
+}
+.form-text {
+    font-family: 'Londrina Outline', cursive;
+    font-weight: 400;
+    font-size: 35px;
+}
+label input {
+    margin-left: 50px;
+    height: 30px;
+
 }
