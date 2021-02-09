@@ -1,3 +1,6 @@
+body {
+    margin: 0px;
+}
 
 #form-section {
     margin-right: 200px;
@@ -8,10 +11,13 @@
     flex-direction: column;
 }
 h1 {
+    margin-top: 0px;
     margin-bottom: 0px;
+    padding-top: 30px;
 }
 
 .meme-page-header {
+    background-color: #85d8ff6e;
     justify-content: center;
     text-align: center;
     font-family: 'Londrina Sketch', cursive;
@@ -32,6 +38,7 @@ form button {
     font-family: 'Londrina Outline', cursive;
     font-weight: 400;
     font-size: 35px;
+    color: #28006f;
 }
 .label-align {
     display: flex;
