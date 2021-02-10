@@ -116,6 +116,7 @@ form button:active {
     color: white;
     font-size: 50px;
     text-transform: uppercase;
+    letter-spacing: 1px;
 }
 .meme-bottomtext-position {
     position: absolute;
@@ -135,6 +136,7 @@ form button:active {
     color: white;
     font-size: 50px;
     text-transform: uppercase;
+    letter-spacing: 1px;
 }
 
 .newmeme-layout:hover:after {
