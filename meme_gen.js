@@ -4,6 +4,7 @@ const bottomTextInput = document.querySelector('input[name="bottomText"]');
 const imageInput = document.querySelector('input[name="imageSrc"]');
 const memeSection = document.querySelector('#newMemesSection');
 
+
 memeForm.addEventListener('submit', function(e){
     e.preventDefault();
     const newMeme = makeMeme(
@@ -16,6 +17,12 @@ memeForm.addEventListener('submit', function(e){
     topTextInput.value = "";
     bottomTextInput.value = "";
 
+});
+
+memeSection.addEventListener("click", function(e){
+    if(e.target.tagName === "BUTTON"){
+        e.target.parentElement.remove();
+    }
 });
 
 
@@ -38,7 +45,7 @@ function makeMeme(imageURL, toptext, bottomtext){
     meme.append(memeImg);
     meme.append(topDiv);
     meme.append(bottomDiv);
-
     return meme;
 }
+
 
