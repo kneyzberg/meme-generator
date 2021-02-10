@@ -39,7 +39,13 @@ function makeMeme(imageURL, toptext, bottomtext){
     removeBtn.classList.add("removeMeme-btn")
     memeImg.setAttribute("src", imageURL);
     topDiv.innerText = toptext;
+    if (topDiv.innerText.length > 20){
+        topDiv.style.fontSize = "35px";
+    }
     bottomDiv.innerText = bottomtext;
+    if (bottomDiv.innerText.length > 20){
+        bottomDiv.style.fontSize = "35px";
+    }
     removeBtn.innerText = "REMOVE MEME X";
     meme.append(removeBtn);
     meme.append(memeImg);
